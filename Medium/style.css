@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    width: cover;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Bungee Outline', cursive;
+    font-size: 100px;
+    color: rgb(189, 188, 188);
+    letter-spacing: 15px;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+.row {
+    width: 100%;
+}
+.nav-row {
+    height: 56px;
+    width: 100%;
+}
