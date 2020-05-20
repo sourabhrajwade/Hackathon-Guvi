@@ -11,12 +11,20 @@ html {
 body {
     width: cover;
     margin: 0 auto;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+header,
+section  {
+    height: 95vh;
+    width: cover;
 }
 h1 {
     font-family: 'Bungee Outline', cursive;
     font-size: 100px;
     color: rgb(189, 188, 188);
     letter-spacing: 15px;
+    margin-bottom: 50px;
 }
 .container {
     height: 100vh;
@@ -24,10 +32,56 @@ h1 {
     
     
 }
+.header-row  {
+    height: 100vh;
+    margin: auto;
+    margin-top: 5rem;
+    
+
+}
+.header-row :not(:first-child){
+    justify-content: center;
+}
+
 .row {
     width: 100%;
 }
 .nav-row {
     height: 56px;
     width: 100%;
+}
+.form-fronts{
+   font-size: 18px;
+    padding-bottom: 40px;
+    color: rgb(155, 153, 153);
+    
+}
+.form-text {
+    font-size: 10px;
+    color: rgb(155, 153, 153);
+}
+.btn-primary {
+    background-color: #777;
+    border-color: #777;
+    text-align: center;
+    box-shadow: 2px;
+    
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+    color: white;
+}
+
+.btn-primary:active,
+.btn-primary:hover {
+    
+    background-color: rgb(30, 202, 245);
+    border:rgb(30, 202, 245) ;
+
+}
+
+.box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
 }
