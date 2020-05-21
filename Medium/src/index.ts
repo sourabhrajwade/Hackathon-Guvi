@@ -45,9 +45,9 @@
 
 
 function notePadConfig () {
-    const buttons = document.querySelectorAll('.notepad-button') as NodeListOf<HTMLButtonElement>;
-    const textField = document.querySelector('#output') as HTMLIFrameElement;
-   textField.document.designMode = "On";
+    const buttons =( HTMLCollection<HTMLButtonElement>)(document.getElementsByClassName('notepad-button');
+    const textField = document.getElementById('output') as HTMLIFrameElement;
+    textField.document.designMode = "On";
 
     for (let i =0; i < buttons.clientHeight, i++) {
         buttons[i].on("click", ()=> {
