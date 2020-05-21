@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
@@ -14,19 +15,19 @@
     <title>Medium</title>
   </head>
   <body>
-    <header>
-      <div class="container page">
+    <header class="page" id="a">
+      <div class="container">
         <div class="row header-row justify-content-center">
-          <form>
+          <form id="myForm"> 
             <h1>Sign In</h1>
             <div class="form-group form-fronts">
               <label for="exampleInputEmail1">User Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="text" name="fusername" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <small id="emailHelp" class="form-text text-muted">Enter your username (leave the @) </small>
             </div>
             <div class="form-group form-fronts">
-              <label for="exampleInputPassword1">Key</label>
-              <input type="text" class="form-control" id="exampleInputPassword1">
+              <label name="fusername" for="exampleInputPassword1">Key</label>
+              <input  type="text" class="form-control" id="exampleInputPassword1">
               <small id="emailHelp" class="form-text text-muted">Enter the Key </small>
             </div>
             <!-- Save to local storage for save login -->
@@ -34,13 +35,13 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div> -->
-            <a type="submit" class="btn btn-primary" id="#a">Submit</a>
+            <a type="submit" class="btn btn-primary" id="#b">Submit</a>
           </form>
         </div>
       </div>
     </header>
-    <section class="header">
-      <div class="container page">
+    <section class="page" id="b">
+      <div class="container">
         <div class="row nav-row justify-content-around">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button
@@ -64,17 +65,9 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#a">Link</a>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="#"
-                    tabindex="-1"
-                    aria-disabled="true"
-                    >Disabled</a
-                  >
-                </li>
+                
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input
@@ -82,9 +75,10 @@
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
+                  id="search"
                 />
                
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                   <img src="/icons/search.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
                   
                 </a>
@@ -98,48 +92,37 @@
             <h1>THOUGHTS</h1>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="row-cards">
           <div class="card-deck">
-            <div class="card mb-3 box" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+            <div class="card" id="1" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
               </div>
             </div>
-            <div class="card mb-3 box" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+              <div class="card" id="2" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
                 </div>
               </div>
-            </div>
-            <div class="card mb-3 box" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." class="card-img" alt="...">
-                </div>
-                <div class="col-md-8">
+              <div class="card" id="3" style="width: 18rem;">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
                   </div>
                 </div>
+            </div>
+            
               </div>
             </div>
           </div>
@@ -150,67 +133,29 @@
               <img src="/icons/signs.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
             </button>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">New Piece</a>
-              <a class="dropdown-item" href="#">Share</a>
+              <a class="dropdown-item" href="#c">New Piece</a>
+              <a class="dropdown-item" href="/">Share</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Explore</a>
+              <a class="dropdown-item" href="/">Explore</a>
             </div>
           </div>
          </div>
       </div>
-      
-        
-      
-    </section>
+
+    </section class="page" id="c">
+
     <section class="notepad--section">
-      <div class="container">
-        <div class="row">
-          <div class="notepad-body">
-            <form class="notepad-structure">
-              <button class="notepad-button" type="button" data-cmd="justifyLeft">
-                <i class="fa fa-align-left" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="justifyCenter">
-                <i class="fa fa-align-center" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="justifyRight">
-                <i class="fa fa-align-justify" aria-hidden="true"></i>
-              </button>
-              <button  class="notepad-button" type="button" data-cmd="justifyFull">
-                <i class="fa fa-align-right" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="bold">
-                <i class="fa fa-bold" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="italix">
-                <i class="fa fa-italic" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="underline">
-                <i class="fa fa-underline" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="insertUnOrderedList">
-                <i class="fa fa-list-ul" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="insertImage">
-                <i class="fa fa-image-o" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="createLink">
-                <i class="fa fa-list-ol" aria-hidden="true"></i>
-              </button>
-              <button class="notepad-button" type="button" data-cmd="showCode" name="active">
-                <i class="fa fa-code" aria-hidden="true"></i>
-              </button>
-            </form>
-            <iframe id="output" name="textField"></iframe>
-          </div>
-        </div>
+      <div class="container mt-5 mb-5">
+        <textarea id="editor"></textarea>
       </div>
       
     </section>
+    
       
-      
-      
-   
+    <script src="./css/ckeditor/ckeditor.js"></script>
+    <script style="height:80vh;width:100%">
+      CKEDITOR.replace('editor');
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
