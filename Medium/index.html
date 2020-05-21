@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
@@ -143,11 +144,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer>
-      
-      <div class="container">
         <div class="row">
           <div class="btn-group dropup justify-content-end">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -156,16 +152,65 @@
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">New Piece</a>
               <a class="dropdown-item" href="#">Share</a>
-              
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Explore</a>
             </div>
           </div>
          </div>
       </div>
-        <!-- Default dropup button -->
       
-    </footer>
+        
+      
+    </section>
+    <section class="notepad--section">
+      <div class="container">
+        <div class="row">
+          <div class="notepad-body">
+            <form class="notepad-structure">
+              <button type="button" data-cmd="justifyLeft">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="justifyCenter">
+                <i class="fa fa-align-center" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="justifyRight">
+                <i class="fa fa-align-justify" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="justifyFull">
+                <i class="fa fa-align-right" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="bold">
+                <i class="fa fa-bold" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="italix">
+                <i class="fa fa-italic" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="underline">
+                <i class="fa fa-underline" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="insertUnOrderedList">
+                <i class="fa fa-list-ul" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="insertImage">
+                <i class="fa fa-image-o" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="createLink">
+                <i class="fa fa-list-ol" aria-hidden="true"></i>
+              </button>
+              <button type="button" data-cmd="showCode" name="active">
+                <i class="fa fa-code" aria-hidden="true"></i>
+              </button>
+            </form>
+            <iframe id="output" name="textField"></iframe>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+      
+      
+      
+   
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
