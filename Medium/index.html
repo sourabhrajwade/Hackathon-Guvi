@@ -3,9 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
       rel="stylesheet"
@@ -15,141 +23,177 @@
     <title>Medium</title>
   </head>
   <body>
-    <main class="out-container" >
+    <main>
       <div class="container page active-page" id="home">
         <div class="row header-row justify-content-center">
-          <form id="myForm"> 
+          <form id="myForm">
             <h1>Sign In</h1>
             <div class="form-group form-fronts">
               <label for="exampleInputEmail1">User Name</label>
-              <input type="text" name="fusername" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">Enter your username (leave the @) </small>
+              <input
+                type="text"
+                name="fusername"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Enter your username (leave the @)
+              </small>
             </div>
             <div class="form-group form-fronts">
               <label name="fusername" for="exampleInputPassword1">Key</label>
-              <input  type="text" class="form-control" id="exampleInputPassword1">
-              <small id="emailHelp" class="form-text text-muted">Enter the Key </small>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Enter the Key
+              </small>
             </div>
             <!-- Save to local storage for save login -->
             <!-- <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div> -->
-            <a type="submit" class="btn btn-primary change" href="#" data-target="content">Submit</a>
+            <a
+              type="submit"
+              class="btn btn-primary change"
+              href="#"
+              data-target="content"
+              
+              >Submit</a
+            >
           </form>
         </div>
       </div>
-    
-    <div class="container page" id="content">
-      <div class="row nav-row justify-content-around">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand change" href="#" data-target="home">iDEAS</a>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#a">Link</a>
-              </li>
-              
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                id="search"
-              />
-              <a class="navbar-brand" href="/">
-                <img src="/icons/search.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
-              </a>
-              </button>
-            </form>
-          </div>
-        </nav>
-      </div>
-     
-      <div class="row" id="row-cards">
-        <div class="hero-block">
-          <h1>THOUGHTS</h1>
-        </div>
-        <div class="card-deck">
-          <div class="card" id="1" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+      <div class="container page" id="content">
+        <div class="row nav-row justify-content-around">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand change" href="#" data-target="home">iDEAS</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="search"
+                />
+                <!-- <a class="navbar-brand" href="#">
+                  <img
+                    src="/icons/search.svg"
+                    width="25"
+                    height="30"
+                    class="d-inline-block align-top"
+                    alt=""
+                    loading="lazy"
+                  />
+                </a> -->
+              </form>
             </div>
-          </div>
-            <div class="card" id="2" style="width: 18rem;">
+          </nav>
+          
+        </div>
+        <div class="row heading-text">
+          <div class="hero-block">
+            <h1>THOUGHTS</h1>
+          </div>  
+        </div>
+        
+
+          <div class="row" id="row-cards">
+          <!-- <div class="col col-md-2 col-lg-3"> -->
+          <div class="card-deck" justify-content-center align-items-center>
+            <!-- <div class="card" id="1" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div> -->
+            </div>
+            <!-- <div class="card" id="2" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
                 <a href="#" class="card-link">Card link</a>
                 <a href="#" class="card-link">Another link</a>
               </div>
             </div>
             <div class="card" id="3" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-          </div>
-          
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a> -->
+              <!-- </div> -->
             </div>
-         
+          
 
-      <div class="row">
-        <div class="btn-group dropup justify-content-end">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="/icons/signs.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
-          </button>
-          <div class="dropdown-menu">
-            <a class="dropdown-item change" href="#" data-target="editor">New Piece</a>
-            <a class="dropdown-item" href="/">Share</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/">Explore</a>
+        <div class="row">
+          <div class="btn-group dropup justify-content-end">
+            <button
+              type="button"
+              class="btn btn-secondary dropdown-toggle"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                src="/icons/signs.svg"
+                width="25"
+                height="30"
+                class="d-inline-block align-top"
+                alt=""
+                loading="lazy"
+              />
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item change" href="#" data-target="edit"
+                >New Piece</a
+              >
+              <a class="dropdown-item" data-target="content">Share</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item"  target="_blank">Explore</a>
+            </div> -->
           </div>
         </div>
-       </div>
-    
-   
-      <div class="row">
-        <textarea id="editor"></textarea>
+      </div>
+      <div class="container page" id="edit"">
+        <div class="row">
+          <textarea id="editor"></textarea>
+        </div>
       </div>
       
-    </div>
-  </main>
+    </main>
 
-    
-    
-      
     <script src="./css/ckeditor/ckeditor.js"></script>
-    <script style="height:80vh;width:100%">
-      CKEDITOR.replace('editor');
+    <script style="height: 80vh; width: 100%;">
+      CKEDITOR.replace("editor");
     </script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

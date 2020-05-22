@@ -14,10 +14,9 @@ body {
     font-weight: 100;
     font-family: 'Roboto', sans-serif;
 }
-header,
-section  {
-    height: 95vh;
-    width: cover;
+main{
+    height: 100vh;
+    width: 100%;
 }
 h1 {
     font-family: 'Bungee Outline', cursive;
@@ -29,13 +28,13 @@ h1 {
 
 .container {
     height: 100vh;
-    width: 100%;
+    width: 1176px;
     
     
 }
 .page {
     display: none;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
     position: fixed;
     padding: 1rem 2rem;
@@ -119,7 +118,37 @@ h1 {
     cursor: pointer;
 }
 
-.card-body img{
-    height: 20px;
-    width: 100%;
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
 }
+.card {
+    padding: 20px;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 5;
+    }
+}
+
