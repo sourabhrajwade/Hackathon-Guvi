@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
         const key = document.getElementById('exampleInputPassword1').value;
         const searchBar = document.getElementById('search');
         //console.log(key);
-        const rowCard = document.getElementById("row-card");
+        //const rowCard = document.getElementById("row-card");
         
         const app = {
             pages: [],
@@ -55,9 +55,10 @@ window.addEventListener("DOMContentLoaded", function () {
             const container = document.querySelector('#content');
             //const row = document.querySelector('#row-cards');
             
-            
+            const imageAuthor = document.querySelector(".logo");
+            imageAuthor.setAttribute("src", `${data["feed"].image}`)
                for (let i =0; i < data['items'].length; i++) {
-                    const row = document.querySelector('#row-cards');
+                    const row = document.getElementById('row-cards');
                     //let i =0;
                     let j = i+1;
                     let k = i+2;
@@ -93,7 +94,16 @@ window.addEventListener("DOMContentLoaded", function () {
                     container.appendChild(row);
                    i = i + 3 
                 }
+                //const searchBar = document
+                searchBar.addEventListener('input', () => searchState(searchBar.value));
+                async function searchState (data) {
+                    let matches = await  data["items"].filter(state => {
+                        const regex = new RegExp(`^${searchText}`,'gi');
+                        state.title.match(regex) || state.description.match(regex);
+                    });
+                }
                 
+                //console.log(matches)
             //console.log(data);
 
         };
