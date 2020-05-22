@@ -7,41 +7,45 @@ window.addEventListener("DOMContentLoaded", function () {
         console.log(key);
         const rowCard = document.getElementById("row-card");
         
-        async function getData (userName){
-            const response = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@"+"drew.costley");
-            const data = await response.json();
-            console.log(data);
-            //window.localStorage.setItem('user', JSON.stringify(data));
-            for (let i = 0; i < data["items"].length;) {
-                //let j = i + 1;
-                //let k = i + 2;
-                let cardBody1 = document.getElementById('1');
-                //let cardBody2 = document.getElementById('2');
-                //let cardBody3 = document.getElementById('3');
-                
+        const app = {
+            pages: [],
+            show: new Event('show'),
+            init: function () {
+                app.pages = document.querySelectorAll('.page');
+                app.pages.forEach((pg) => {
+                    pg.addEventListener('show', app.pageShown);
+                })
 
-                cardBody1.innerHTML = data["items"][i]["content"];
-                //cardBody2.innerHTML = data["items"][j]["content"];
-                //cardBody3.innerHTML = data["items"][k]["content"];
+                document.querySelectorAll('.change').forEach((link) => {
+                    link.addEventListener('click', app.nav)
+                })
+                history.replaceState({}, 'Home', '#home');
+                window.addEventListener('popstate', app.poppin);
+            },
+            nav: function(ev) {
+                ev.preventDefault();
+                let currentPage = ev.target.getAttribute('data-target');
+                document.querySelector('.active-page').classList.remove('active-page');
+                document.getElementById(currentPage).classList.add('active-page');
+                history.pushState({}, currentPage, `#${currentPage}`);
+                document.getElementById(currentPage).dispatchEvent(app.show);
 
-                
+            },
+            pageShown: function(ev) {
+                console.log('Page',ev.target.id,'just shown');
+            },
+            poppin: function(ev) {
+                console.log(location.hash, 'popstate event' );
+                let hash = location.hash.replace('#', '');
+                document.querySelector('.active-page').classList.remove('active-page');
+                document.getElementById(hash).classList.add('active-page');
+                //history.pushState({}, currentPage, `#${currentPage}`);
+                document.getElementById(hash).dispatchEvent(app.show);
+
             }
-            
         }
-        getData(userName);
-        
-        const searchState = (searchText => {
-            
-            const data = JSON.parse(window.localStorage.getItem('user'))
-            //console.log(data);
-            let matches = data["items"].filter(state => {
-                const regex = new RegExp(`^${searchText}`,'gi');
-                return  state.title.match(regex) || state.description.match(regex);
-            });
-            console.log(matches);
-        })
-        searchBar.addEventListener('input', () => searchState(searchBar.value));
-        
+        app.init();
+       
         
         
         

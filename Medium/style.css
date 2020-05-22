@@ -33,6 +33,16 @@ h1 {
     
     
 }
+.page {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    padding: 1rem 2rem;
+}
+.active-page {
+    display: block;
+}
 .header-row  {
     height: 100vh;
     margin: auto;

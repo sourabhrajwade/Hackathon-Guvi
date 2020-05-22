@@ -15,8 +15,8 @@
     <title>Medium</title>
   </head>
   <body>
-    <header class="page" id="a">
-      <div class="container">
+    <main class="out-container" >
+      <div class="container page active-page" id="home">
         <div class="row header-row justify-content-center">
           <form id="myForm"> 
             <h1>Sign In</h1>
@@ -35,66 +35,71 @@
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div> -->
-            <a type="submit" class="btn btn-primary" id="#b">Submit</a>
+            <a type="submit" class="btn btn-primary change" href="#" data-target="content">Submit</a>
           </form>
         </div>
       </div>
-    </header>
-    <section class="page" id="b">
-      <div class="container">
-        <div class="row nav-row justify-content-around">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">iDEAS</a>
+    
+    <div class="container page" id="content">
+      <div class="row nav-row justify-content-around">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand change" href="#" data-target="home">iDEAS</a>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#a">Link</a>
-                </li>
-                
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  id="search"
-                />
-               
-                <a class="navbar-brand" href="/">
-                  <img src="/icons/search.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
-                  
-                </a>
-                </button>
-              </form>
-            </div>
-          </nav>
-        </div>
-        <div class="row">
-          <div class="hero-block">
-            <h1>THOUGHTS</h1>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#a">Link</a>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="search"
+              />
+              <a class="navbar-brand" href="/">
+                <img src="/icons/search.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
+              </a>
+              </button>
+            </form>
           </div>
+        </nav>
+      </div>
+     
+      <div class="row" id="row-cards">
+        <div class="hero-block">
+          <h1>THOUGHTS</h1>
         </div>
-        <div class="row" id="row-cards">
-          <div class="card-deck">
-            <div class="card" id="1" style="width: 18rem;">
+        <div class="card-deck">
+          <div class="card" id="1" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+            <div class="card" id="2" style="width: 18rem;">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -103,7 +108,7 @@
                 <a href="#" class="card-link">Another link</a>
               </div>
             </div>
-              <div class="card" id="2" style="width: 18rem;">
+            <div class="card" id="3" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -112,44 +117,34 @@
                   <a href="#" class="card-link">Another link</a>
                 </div>
               </div>
-              <div class="card" id="3" style="width: 18rem;">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div>
-                </div>
+          </div>
+          
             </div>
-            
-              </div>
-            </div>
+         
+
+      <div class="row">
+        <div class="btn-group dropup justify-content-end">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="/icons/signs.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item change" href="#" data-target="editor">New Piece</a>
+            <a class="dropdown-item" href="/">Share</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/">Explore</a>
           </div>
         </div>
-        <div class="row">
-          <div class="btn-group dropup justify-content-end">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="/icons/signs.svg" width="25" height="30" class="d-inline-block align-top " alt="" loading="lazy">
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#c">New Piece</a>
-              <a class="dropdown-item" href="/">Share</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/">Explore</a>
-            </div>
-          </div>
-         </div>
-      </div>
-
-    </section class="page" id="c">
-
-    <section class="notepad--section">
-      <div class="container mt-5 mb-5">
+       </div>
+    
+   
+      <div class="row">
         <textarea id="editor"></textarea>
       </div>
       
-    </section>
+    </div>
+  </main>
+
+    
     
       
     <script src="./css/ckeditor/ckeditor.js"></script>
