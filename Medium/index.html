@@ -1,223 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Medium</title>
-  </head>
-  <body>
-    <main>
-      <div class="container page active-page" id="home">
-        <div class="row header-row justify-content-center">
-          <form id="myForm">
-            <h1>Sign In</h1>
-            <div class="form-group form-fronts">
-              <label for="exampleInputEmail1">User Name</label>
-              <input
-                type="text"
-                name="fusername"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                required
-              />
-              <small id="emailHelp" class="form-text text-muted"
-                >Enter your username (leave the @)
-              </small>
-            </div>
-            <div class="form-group form-fronts">
-              <label name="fusername" for="exampleInputPassword1">Key</label>
-              <input
-                type="text"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
-              <small id="emailHelp" class="form-text text-muted"
-                >Enter the Key
-              </small>
-            </div>
-            <!-- Save to local storage for save login -->
-            <!-- <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div> -->
-            <a
-              type="submit"
-              class="btn btn-primary change"
-              href="#"
-              data-target="content"
-              
-              >Submit</a
-            >
-          </form>
-        </div>
-      </div>
-
-      <div class="container page" id="content">
-        <div class="row nav-row justify-content-around">
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand change" href="#" data-target="home">iDEAS</a>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li>
-              <form class="form-inline my-2 my-lg-0">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  id="search"
-                />
-                <!-- <a class="navbar-brand" href="#">
-                  <img
-                    src="/icons/search.svg"
-                    width="25"
-                    height="30"
-                    class="d-inline-block align-top"
-                    alt=""
-                    loading="lazy"
-                  />
-                </a> -->
-              
-              </form>
-            </li>
-            <li>
-              <img src="" alt="Logo" class="logo" center style="width:40px;">
-            </li>
-            </ul>
-            </div>
-          </nav>
-          
-        </div>
-        <div class="row heading-text">
-          <div class="hero-block">
-            <h1>THOUGHTS</h1>
-          </div>  
-        </div>
-        
-
-          <div class="row" id="row-cards">
-          <!-- <div class="col col-md-2 col-lg-3"> -->
-          <div class="card-deck" justify-content-center align-items-center>
-            <!-- <div class="card" id="1" style="width: 18rem;">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div> -->
-            </div>
-            <!-- <div class="card" id="2" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-            <div class="card" id="3" style="width: 18rem;">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a> -->
-              <!-- </div> -->
-            </div>
-          
-
-        <div class="row">
-          <div class="btn-group dropup justify-content-end">
-            <button
-              type="button"
-              class="btn btn-secondary dropdown-toggle"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <img
-                src="/icons/signs.svg"
-                width="25"
-                height="30"
-                class="d-inline-block align-top"
-                alt=""
-                loading="lazy"
-              />
-            </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item change" href="#" data-target="edit"
-                >New Piece</a
-              >
-              <a class="dropdown-item" data-target="content">Share</a>
-              <!-- <div class="dropdown-divider"></div>
-              <a class="dropdown-item"  target="_blank">Explore</a>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <div class="container page" id="edit"">
-        <div class="row">
-          <textarea id="editor"></textarea>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="./icons/knight.svg" width="30" height="30" alt="" loading="lazy">
+        Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" 
+        id="myInput"  placeholder="Search for names.." title="Type in a name">
       
-    </main>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section>
+      <div class="main--body">
+        <ul class="card" id="card-holder">
 
-    <script src="./css/ckeditor/ckeditor.js"></script>
-    <script style="height: 80vh; width: 100%;">
-      CKEDITOR.replace("editor");
-    </script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./JS/index.js"></script>
-  </body>
+        </ul>
+      </div>
+  </section>
+  <!-- <section id="blog" class="blog">
+    <div class="blog__header">
+      <p class="blog__header1">some of my</p>
+      <h2 class="blog__header2">Medium
+        <span class="blog__header2Span">posts</span>
+      </h2>
+    </div>
+    <ul class="blog__slider" id="slider"> 
+      Posts go here
+    </ul>
+    <ul class="blog__counter">
+      <li class="blog__counterItem blog__counterItem-active"></li>
+      <li class="blog__counterItem"></li>
+      <li class="blog__counterItem"></li>
+    </ul>
+  </section> -->
+  
+  <section>
+    <nav class="navbar navbar-light bg-light fixed-bottom">
+      <a class="navbar-brand">THOUGHTS</a>
+      <button type="button" class="btn btn-primary" data-toggle="modal" target="#staticBackdrop">
+        New Article
+      </button>
+      
+      
+    </nav>
+  </section>
+  <!-- <section>
+    <div  format_align_justify id="editor">
+      <p>Hello World!</p>
+      <p>Some initial <strong>bold</strong> text</p>
+      <p><br></p>
+    </div>
+    
+  </section>
+   -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+  <script src="./Js/index.js"></script>
+</body>
 </html>

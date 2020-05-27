@@ -1,0 +1,22 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sourabhrajwade/Hackathon-Guvi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sourabhrajwade/Hackathon-Guvi/issues"
+  },
+  "homepage": "https://github.com/sourabhrajwade/Hackathon-Guvi#readme",
+  "dependencies": {
+    "require": "^2.4.20"
+  }
+}
